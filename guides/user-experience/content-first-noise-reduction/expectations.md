@@ -1,0 +1,9 @@
+- On phone-sized and desktop-sized screens, no fixed-position element visible on page load covers more than 15% of the screen area.
+- Every fixed-position element visible on page load, other than `header` and `nav` elements (or elements with `role="banner"` or `role="navigation"`), contains a visible button with a text label that hides the element when clicked.
+- Without any user interaction after page load, no popover or modal dialog opens.
+- On phone-sized and desktop-sized screens, every fixed or sticky element wider than half the screen is shorter than 12% of the screen height.
+- After the user scrolls down (for example, with the mouse wheel) by about one screen height, the persistent top bar (a fixed or sticky header or navigation bar) is either out of view, with its bottom edge at or above the top of the screen, or shrunk to less than 80% of its original height.
+- After the user then scrolls up, the persistent top bar is fully visible.
+- While the scrolled-away top bar contains keyboard focus, it is fully visible.
+- Clicking the button that controls a `popover` element opens that popover, which then matches `:popover-open`.
+- At least one `details` element is present and closed on page load.
