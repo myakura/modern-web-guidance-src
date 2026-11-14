@@ -133,10 +133,11 @@ window.__featuresMapping = {
     "customizable-select"
   ],
   "autofill-address-form": [
-    "autofill"
+    "input"
   ],
   "autofill-highlight-inputs": [
-    "autofill"
+    "autofill",
+    "text-stroke-fill"
   ],
   "autofill-payment-form": [
     "enterkeyhint",
@@ -160,7 +161,7 @@ window.__featuresMapping = {
     "customizable-select"
   ],
   "button-group": [
-    "customizable-select"
+    "tmp-customizable-select-listbox"
   ],
   "combobox": [
     "customizable-select",
@@ -170,7 +171,7 @@ window.__featuresMapping = {
     "customizable-select"
   ],
   "cycle-toggle": [
-    "customizable-select"
+    "tmp-customizable-select-listbox"
   ],
   "filterable-select": [
     "customizable-select",
@@ -187,7 +188,7 @@ window.__featuresMapping = {
   "rating": [
     "meter",
     "input-range",
-    "customizable-select"
+    "tmp-customizable-select-listbox"
   ],
   "required-field-feedback": [
     "user-pseudos"
@@ -228,7 +229,7 @@ window.__featuresMapping = {
   "tree-view": [
     "details",
     "details-content",
-    "customizable-select"
+    "tmp-customizable-select-listbox"
   ],
   "validate-input-after-interaction": [
     "user-pseudos"
@@ -274,7 +275,8 @@ window.__featuresMapping = {
     "declarative-shadow-dom"
   ],
   "calculate-event-differentials": [
-    "temporal"
+    "temporal",
+    "intl-duration-format"
   ],
   "capture-location-agnostic-data": [
     "temporal"
@@ -282,20 +284,21 @@ window.__featuresMapping = {
   "coordinate-global-events": [
     "temporal"
   ],
-  "format-human-readable-durations": [
-    "temporal",
-    "intl-duration-format"
+  "js": [
+    "structured-clone",
+    "url",
+    "dom",
+    "array-group",
+    "promise-withresolvers",
+    "events",
+    "array-by-copy",
+    "array-findlast",
+    "abortsignal-timeout",
+    "abortsignal-any",
+    "error-cause",
+    "text-encoding"
   ],
-  "manage-recurring-intervals": [
-    "temporal"
-  ],
-  "model-partial-time-concepts": [
-    "temporal"
-  ],
-  "sequence-distributed-events": [
-    "temporal"
-  ],
-  "stabilize-reactive-state": [
+  "sort-high-precision-timestamps": [
     "temporal"
   ],
   "support-global-calendar-systems": [
@@ -329,9 +332,6 @@ window.__featuresMapping = {
   "deliver-optimized-decorative-images": [
     "image-set"
   ],
-  "serve-alternative-image-formats": [
-    "image-set"
-  ],
   "deprioritize-background-fetches": [
     "fetch-priority",
     "fetch"
@@ -358,6 +358,7 @@ window.__featuresMapping = {
   ],
   "identify-inp-causes": [
     "long-animation-frames",
+    "tmp-long-animation-frames-style-layout",
     "event-timing"
   ],
   "improve-next-page-load-performance": [
@@ -390,9 +391,6 @@ window.__featuresMapping = {
   ],
   "optimize-script-priority": [
     "fetch-priority"
-  ],
-  "optimize-scroll-stability": [
-    "contain-intrinsic-size"
   ],
   "out-of-order-html-streaming": [
     "template-for",
@@ -431,6 +429,12 @@ window.__featuresMapping = {
   "custom-window-title-bar": [
     "window-drag",
     "window-controls-overlay"
+  ],
+  "install-web-app": [
+    "install",
+    "navigator-install",
+    "beforeinstallprompt",
+    "manifest"
   ],
   "installable-web-app-metadata": [
     "manifest",
@@ -485,7 +489,8 @@ window.__featuresMapping = {
     "webauthn-signals"
   ],
   "passkey-reauthentication": [
-    "webauthn"
+    "webauthn",
+    "webauthn-signals"
   ],
   "passkey-registration": [
     "webauthn",
@@ -563,10 +568,22 @@ window.__featuresMapping = {
     "scroll-driven-animations"
   ],
   "scrollability-affordance-hints": [
-    "container-scroll-state-queries"
+    "container-scroll-state-queries",
+    "scroll-driven-animations"
   ],
   "shrinking-header-on-scroll": [
     "scroll-driven-animations"
+  ],
+  "single-line-overflow": [
+    "text-overflow",
+    "container-queries",
+    "scroll-driven-animations",
+    "container-style-queries",
+    "masks",
+    "interpolate-size",
+    "resize-observer",
+    "registered-custom-properties",
+    "individual-transforms"
   ],
   "state-aware-sticky-headers": [
     "container-scroll-state-queries"
@@ -598,6 +615,11 @@ window.__featuresMapping = {
   "carousel-snap-highlights": [
     "container-scroll-state-queries"
   ],
+  "client-side-routing": [
+    "navigation",
+    "view-transitions",
+    "active-view-transition"
+  ],
   "consistent-cross-document-transitions": [
     "blocking-render",
     "link-rel-expect",
@@ -626,13 +648,17 @@ window.__featuresMapping = {
     "user-select"
   ],
   "drag-and-drop": [
-    "user-select"
+    "move-before",
+    "pointer-events-api",
+    "user-select",
+    "reading-flow"
   ],
   "dynamic-sibling-animations": [
     "sibling-count"
   ],
   "dynamic-sort": [
     "view-transitions",
+    "view-transitions-element-scoped",
     "move-before"
   ],
   "group-element-transitions": [
@@ -745,7 +771,9 @@ window.__featuresMapping = {
   ],
   "sortable-table": [
     "invoker-commands",
-    "view-transitions"
+    "view-transitions",
+    "view-transitions-element-scoped",
+    "move-before"
   ],
   "spatial-navigation": [
     "scroll-into-view"
@@ -758,7 +786,8 @@ window.__featuresMapping = {
     "intersection-observer",
     "mutationobserver",
     "resize-observer",
-    "web-animations"
+    "web-animations",
+    "prefers-reduced-motion"
   ],
   "swipe-to-reveal": [
     "overscroll-behavior",
@@ -770,24 +799,41 @@ window.__featuresMapping = {
     "hidden-until-found",
     "interpolate-size",
     "transition-behavior",
-    "starting-style",
     "details-name",
-    "details"
+    "dir-pseudo",
+    "details",
+    "details-content",
+    "invoker-commands"
+  ],
+  "app-menus": [
+    "popover",
+    "invoker-commands",
+    "anchor-positioning",
+    "focusgroup",
+    "has"
   ],
   "breadcrumbs": [
     "border-shape",
     "corner-shape",
-    "popover"
+    "sibling-count",
+    "forced-colors",
+    "focus-visible",
+    "clip-path",
+    "logical-properties"
   ],
   "card": [
     "has",
     "container-queries",
-    "container-style-queries"
+    "subgrid"
   ],
   "carousel": [
     "scroll-snap",
+    "scroll-behavior",
+    "overscroll-behavior",
+    "scrollend",
+    "scroll-snap-events",
     "scroll-driven-animations",
-    "scroll-buttons"
+    "sibling-count"
   ],
   "checkbox": [
     "accent-color",
@@ -798,7 +844,7 @@ window.__featuresMapping = {
   "checkbox-group": [
     "subgrid",
     "indeterminate",
-    "customizable-select"
+    "tmp-customizable-select-listbox"
   ],
   "content-table": [
     "sticky-positioning",
@@ -811,7 +857,12 @@ window.__featuresMapping = {
   ],
   "copy-button": [
     "invoker-commands",
-    "async-clipboard"
+    "async-clipboard",
+    "popover",
+    "prefers-reduced-motion",
+    "logical-properties",
+    "focus-within",
+    "interaction"
   ],
   "dark-mode-toggle": [
     "color-scheme",
@@ -826,7 +877,8 @@ window.__featuresMapping = {
     "dialog",
     "dialog-closedby",
     "invoker-commands",
-    "popover"
+    "popover",
+    "overscroll-behavior"
   ],
   "hovercard": [
     "popover",
@@ -845,17 +897,28 @@ window.__featuresMapping = {
     "picture-in-picture"
   ],
   "menu": [
-    "container-scroll-state-queries",
     "popover",
-    "subgrid",
-    "menu",
-    "sticky-positioning",
-    "anchor-positioning"
+    "invoker-commands",
+    "anchor-positioning",
+    "focusgroup",
+    "has",
+    "abs-sign"
   ],
   "navbar": [
-    "popover"
+    "popover",
+    "nesting",
+    "anchor-positioning",
+    "viewport-unit-variants",
+    "logical-properties",
+    "focus-visible",
+    "forced-colors",
+    "starting-style",
+    "transition-behavior",
+    "interpolate-size",
+    "content-visibility"
   ],
   "navigation-drawer": [
+    "dialog",
     "inert",
     "intersection-observer",
     "popover",
@@ -870,6 +933,7 @@ window.__featuresMapping = {
   ],
   "persistent-toast-notifications": [
     "popover",
+    "arianotify",
     "anchor-positioning",
     "sibling-count",
     "transition-behavior"
@@ -911,21 +975,37 @@ window.__featuresMapping = {
     "scroll-snap-events"
   ],
   "tabs": [
-    "anchor-positioning",
+    "focusgroup",
     "hidden-until-found",
     "scroll-snap",
+    "scroll-driven-animations",
+    "interpolate-size"
+  ],
+  "toolbar": [
     "popover",
-    "scroll-buttons"
+    "interest-invokers",
+    "popover-hint",
+    "anchor-positioning",
+    "async-clipboard",
+    "forced-colors",
+    "focus-visible",
+    "prefers-reduced-motion",
+    "logical-properties",
+    "focusgroup"
   ],
   "content-first-noise-reduction": [
     "popover",
-    "details"
+    "details",
+    "invoker-commands",
+    "container-scroll-state-queries"
   ],
   "form-factor-adaptation": [
     "container-queries",
     "safe-area-inset",
     "text-wrap-balance",
-    "text-wrap-pretty"
+    "text-wrap-pretty",
+    "interaction",
+    "has"
   ],
   "guided-navigation": [
     "view-transitions",
@@ -935,7 +1015,9 @@ window.__featuresMapping = {
   "natural-interactions": [
     "focus-visible",
     "linear-easing",
-    "scroll-snap"
+    "scroll-snap",
+    "popover",
+    "anchor-positioning"
   ],
   "preference-aware-ui": [
     "prefers-color-scheme",
@@ -1002,8 +1084,8 @@ window.__featuresMapping = {
     "tmp-text-decoration-inset",
     "text-decoration-skip-spaces",
     "background-clip-border-area",
-    "tmp-path-length",
-    "border-shape"
+    "border-shape",
+    "corner-shape"
   ],
   "customize-scrollbar-color-and-thickness": [
     "scrollbar-color",
@@ -1021,7 +1103,7 @@ window.__featuresMapping = {
     "border-shape",
     "corner-shape",
     "border-radius",
-    "tmp-polygon-round"
+    "shapes-polygon-round"
   ],
   "equal-width-text-lines": [
     "text-fit",
@@ -1072,7 +1154,10 @@ window.__featuresMapping = {
     "text-wrap-balance",
     "text-wrap-pretty",
     "min-max-clamp",
-    "viewport-units"
+    "viewport-units",
+    "logical-properties",
+    "hyphens",
+    "ch"
   ],
   "visual-effects": [
     "box-shadow",
@@ -1105,6 +1190,10 @@ window.__featuresMapping = {
     "declarative-webmcp"
   ],
   "agentic-javascript-tools": [
+    "document-modelcontext"
+  ],
+  "webmcp": [
+    "declarative-webmcp",
     "document-modelcontext"
   ]
 };

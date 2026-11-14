@@ -1,6 +1,9 @@
 {
   "guides": {
     "accessibility": {
+      "accessibility": [
+        "daily-grind"
+      ],
       "accessible-error-announcement": [
         "task"
       ],
@@ -30,6 +33,9 @@
       "animate-to-intrinsic-sizes": [
         "task"
       ],
+      "atrule-support-conditionals": [
+        "daily-grind"
+      ],
       "calculate-with-intrinsic-sizes": [
         "task"
       ],
@@ -40,6 +46,9 @@
         "task"
       ],
       "css": [
+        "daily-grind"
+      ],
+      "css-layout": [
         "daily-grind"
       ],
       "design-token-reactivity": [
@@ -72,6 +81,10 @@
       ],
       "style-parent-with-has": [
         "task"
+      ],
+      "usage-aware-component-variations": [
+        "daily-grind",
+        "devtools-times"
       ]
     },
     "forms": {
@@ -128,13 +141,20 @@
         "devtools-times"
       ],
       "switch": [
-        "daily-grind"
+        "daily-grind",
+        "daily-grind-limited"
       ],
       "validate-input-after-interaction": [
         "task"
       ]
     },
     "html": {
+      "accessible-web-components": [
+        "daily-grind"
+      ],
+      "custom-elements": [
+        "daily-grind"
+      ],
       "form-associated-custom-elements": [
         "daily-grind"
       ],
@@ -143,6 +163,12 @@
         "devtools-times"
       ],
       "prerendering-custom-elements": [
+        "daily-grind"
+      ],
+      "shadow-dom": [
+        "daily-grind"
+      ],
+      "styling-web-components": [
         "daily-grind"
       ],
       "web-components": [
@@ -159,19 +185,10 @@
       "coordinate-global-events": [
         "task"
       ],
-      "format-human-readable-durations": [
-        "task"
+      "js": [
+        "daily-grind"
       ],
-      "manage-recurring-intervals": [
-        "task"
-      ],
-      "model-partial-time-concepts": [
-        "task"
-      ],
-      "sequence-distributed-events": [
-        "task"
-      ],
-      "stabilize-reactive-state": [
+      "sort-high-precision-timestamps": [
         "task"
       ],
       "support-global-calendar-systems": [
@@ -238,13 +255,16 @@
         "daily-grind"
       ],
       "optimize-image-priority": [
-        "task"
+        "daily-grind"
       ],
       "optimize-preload-priority": [
         "task"
       ],
       "optimize-script-priority": [
         "task"
+      ],
+      "out-of-order-html-streaming": [
+        "daily-grind"
       ],
       "performance": [
         "task"
@@ -260,6 +280,15 @@
       "privacy": [
         "daily-grind",
         "devtools-times"
+      ]
+    },
+    "pwa": {
+      "install-web-app": [
+        "daily-grind",
+        "daily-grind-limited"
+      ],
+      "migrate-web-app-origin": [
+        "daily-grind"
       ]
     },
     "security": {
@@ -293,7 +322,25 @@
         "daily-grind",
         "devtools-times"
       ],
+      "quick-sign-ins": [
+        "daily-grind"
+      ],
+      "restrict-outbound-connections": [
+        "daily-grind"
+      ],
+      "sanitize-untrusted-html": [
+        "daily-grind"
+      ],
+      "secure-external-subresources": [
+        "daily-grind"
+      ],
       "security": [
+        "daily-grind"
+      ],
+      "trusted-types": [
+        "daily-grind"
+      ],
+      "validate-origins": [
         "daily-grind"
       ],
       "verify-email-ownership": [
@@ -307,11 +354,17 @@
       "component-specific-light-dark-theme": [
         "task"
       ],
+      "icons": [
+        "daily-grind"
+      ],
       "position-aware-tooltips": [
         "task"
       ],
       "pull-to-reveal": [
         "task"
+      ],
+      "responsive-table": [
+        "daily-grind"
       ],
       "scroll-position-aware-elements": [
         "task"
@@ -325,6 +378,9 @@
       "shrinking-header-on-scroll": [
         "task"
       ],
+      "single-line-overflow": [
+        "daily-grind"
+      ],
       "state-aware-sticky-headers": [
         "task"
       ],
@@ -333,8 +389,11 @@
       ]
     },
     "ui-behaviors": {
+      "2d-panning": [
+        "daily-grind"
+      ],
       "anchor-positioning-tab-underline": [
-        "task"
+        "daily-grind"
       ],
       "animate-element-entry-exit": [
         "task"
@@ -365,8 +424,14 @@
       "drag": [
         "daily-grind"
       ],
+      "drag-and-drop": [
+        "daily-grind"
+      ],
       "dynamic-sibling-animations": [
         "task"
+      ],
+      "dynamic-sort": [
+        "daily-grind"
       ],
       "group-element-transitions": [
         "task"
@@ -404,8 +469,17 @@
       "platform-controls-dismiss-dialog": [
         "task"
       ],
+      "prevent-page-scroll-under-modal-dialog": [
+        "daily-grind"
+      ],
       "same-document-transitions": [
         "task"
+      ],
+      "scoped-component-transitions": [
+        "daily-grind"
+      ],
+      "scroll-completion-effects": [
+        "daily-grind"
       ],
       "scroll-entry-exit-effects": [
         "task"
@@ -425,11 +499,57 @@
       "search-hidden-content": [
         "task"
       ],
+      "sortable-table": [
+        "daily-grind"
+      ],
+      "spatial-navigation": [
+        "daily-grind"
+      ],
       "swipe-to-remove": [
         "task"
+      ],
+      "swipe-to-reveal": [
+        "daily-grind"
       ]
     },
     "ui-components": {
+      "accordion": [
+        "daily-grind"
+      ],
+      "app-menus": [
+        "daily-grind"
+      ],
+      "breadcrumbs": [
+        "daily-grind"
+      ],
+      "card": [
+        "daily-grind"
+      ],
+      "carousel": [
+        "daily-grind"
+      ],
+      "checkbox": [
+        "daily-grind"
+      ],
+      "copy-button": [
+        "daily-grind",
+        "daily-grind-newly"
+      ],
+      "dark-mode-toggle": [
+        "daily-grind"
+      ],
+      "dialog": [
+        "daily-grind"
+      ],
+      "hovercard": [
+        "daily-grind"
+      ],
+      "menu": [
+        "daily-grind"
+      ],
+      "navbar": [
+        "daily-grind"
+      ],
       "navigation-drawer": [
         "task"
       ],
@@ -439,12 +559,38 @@
       "persistent-toast-notifications": [
         "task"
       ],
+      "progress": [
+        "daily-grind"
+      ],
+      "progress-ring": [
+        "daily-grind"
+      ],
       "scrollspy": [
-        "daily-grind",
-        "devtools-times"
+        "daily-grind"
+      ],
+      "spinner": [
+        "daily-grind"
       ],
       "stack-drill-down": [
         "task"
+      ],
+      "tabs": [
+        "daily-grind",
+        "daily-grind-limited"
+      ],
+      "toolbar": [
+        "daily-grind"
+      ]
+    },
+    "user-experience": {
+      "content-first-noise-reduction": [
+        "daily-grind"
+      ],
+      "form-factor-adaptation": [
+        "daily-grind"
+      ],
+      "natural-interactions": [
+        "daily-grind"
       ]
     },
     "visual-design": {
@@ -454,8 +600,20 @@
       "apply-webgl-shaders": [
         "task"
       ],
+      "browser-ui-theming": [
+        "daily-grind"
+      ],
+      "color": [
+        "daily-grind"
+      ],
       "complex-shapes": [
         "task"
+      ],
+      "contrast-color": [
+        "daily-grind"
+      ],
+      "custom-text-decorations": [
+        "daily-grind"
       ],
       "customize-scrollbar-color-and-thickness": [
         "task"
@@ -464,7 +622,8 @@
         "task"
       ],
       "equal-width-text-lines": [
-        "daily-grind"
+        "daily-grind",
+        "daily-grind-limited"
       ],
       "export-html-media-from-canvas": [
         "task"
@@ -486,6 +645,12 @@
       ],
       "soft-edge-content-fade": [
         "task"
+      ],
+      "typography": [
+        "daily-grind"
+      ],
+      "visual-effects": [
+        "daily-grind"
       ],
       "visually-stable-font-fallbacks": [
         "task"
@@ -516,5 +681,32 @@
         "devtools-times"
       ]
     }
-  }
+  },
+  "disciplineGuides": [
+    "accessibility",
+    "browser-ui-theming",
+    "color",
+    "content-first-noise-reduction",
+    "cpp-on-the-web",
+    "css",
+    "css-conditionals",
+    "css-layout",
+    "form-factor-adaptation",
+    "forms",
+    "guided-navigation",
+    "html",
+    "js",
+    "motion",
+    "natural-interactions",
+    "passkeys",
+    "performance",
+    "preference-aware-ui",
+    "privacy",
+    "responsive-design",
+    "security",
+    "typography",
+    "visual-effects",
+    "web-components",
+    "webmcp"
+  ]
 }
