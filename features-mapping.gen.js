@@ -518,6 +518,9 @@ window.__featuresMapping = {
     "subresource-integrity",
     "referrer-policy"
   ],
+  "security": [
+    "document-isolation-policy"
+  ],
   "trusted-types": [
     "trusted-types"
   ],
@@ -751,7 +754,8 @@ window.__featuresMapping = {
   ],
   "scroll-snap-realtime-feedback": [
     "scroll-snap-events",
-    "scroll-snap"
+    "scroll-snap",
+    "focusgroup"
   ],
   "scroll-snap-state-sync": [
     "scroll-snap-events",
@@ -949,7 +953,9 @@ window.__featuresMapping = {
     "progress",
     "conic-gradients",
     "masks",
-    "registered-custom-properties"
+    "registered-custom-properties",
+    "background-clip-border-area",
+    "attr"
   ],
   "scrollspy": [
     "scroll-marker-targets",
@@ -965,7 +971,9 @@ window.__featuresMapping = {
   "spinner": [
     "prefers-reduced-motion",
     "conic-gradients",
-    "progress"
+    "progress",
+    "registered-custom-properties",
+    "background-clip-border-area"
   ],
   "stack-drill-down": [
     "inert",
@@ -1075,7 +1083,11 @@ window.__featuresMapping = {
     "svg"
   ],
   "contrast-color": [
-    "contrast-color"
+    "contrast-color",
+    "relative-color",
+    "text-stroke-fill",
+    "paint-order",
+    "svg-filters"
   ],
   "custom-text-decorations": [
     "text-decoration",
@@ -1097,6 +1109,7 @@ window.__featuresMapping = {
     "light-dark",
     "light-dark-image",
     "image-function",
+    "scrollbar-color",
     "accent-color"
   ],
   "element-shape": [
@@ -1141,8 +1154,11 @@ window.__featuresMapping = {
   "shaped-cutouts": [
     "masks"
   ],
-  "soft-edge-content-fade": [
-    "masks"
+  "teaser": [
+    "masks",
+    "lh",
+    "backdrop-filter",
+    "line-clamp"
   ],
   "typography": [
     "font-size",

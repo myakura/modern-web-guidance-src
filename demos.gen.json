@@ -2585,7 +2585,8 @@
       "description": "Provide real-time visual feedback in linked UI elements while a user scrolls through snap-aligned content, before the scroll gesture completes.",
       "features": [
         "scroll-snap-events",
-        "scroll-snap"
+        "scroll-snap",
+        "focusgroup"
       ],
       "demos": [
         {
@@ -3081,7 +3082,9 @@
         "progress",
         "conic-gradients",
         "masks",
-        "registered-custom-properties"
+        "registered-custom-properties",
+        "background-clip-border-area",
+        "attr"
       ],
       "demos": [
         {
@@ -3114,7 +3117,9 @@
       "features": [
         "prefers-reduced-motion",
         "conic-gradients",
-        "progress"
+        "progress",
+        "registered-custom-properties",
+        "background-clip-border-area"
       ],
       "demos": [
         {
@@ -3283,7 +3288,11 @@
       "title": "Ensure text readability with dynamic background colors",
       "description": "Select a readable text color with sufficient contrast on a dynamic background color.",
       "features": [
-        "contrast-color"
+        "contrast-color",
+        "relative-color",
+        "text-stroke-fill",
+        "paint-order",
+        "svg-filters"
       ],
       "demos": [
         {
@@ -3345,6 +3354,7 @@
         "light-dark",
         "light-dark-image",
         "image-function",
+        "scrollbar-color",
         "accent-color"
       ],
       "demos": [
@@ -3491,21 +3501,20 @@
       ]
     },
     {
-      "id": "soft-edge-content-fade",
+      "id": "teaser",
       "category": "visual-design",
-      "title": "Soft Edge Content Fade",
-      "description": "Apply a transparency gradient to content edges to indicate further scrollable areas or to obscure payment-walled text.",
+      "title": "Teaser",
+      "description": "Fade out or blur the end of hard-truncated or payment-walled content so that it blends into the background behind it.",
       "features": [
-        "masks"
+        "masks",
+        "lh",
+        "backdrop-filter",
+        "line-clamp"
       ],
       "demos": [
         {
           "id": "demo",
-          "path": "guides/visual-design/soft-edge-content-fade/demo.html"
-        },
-        {
-          "id": "negative-demo",
-          "path": "guides/visual-design/soft-edge-content-fade/negative-demo.html"
+          "path": "guides/visual-design/teaser/demo.html"
         }
       ]
     },
@@ -3619,6 +3628,7 @@
     "autofill",
     "autonomous-custom-elements",
     "backdrop",
+    "backdrop-filter",
     "background-clip-border-area",
     "beforeinstallprompt",
     "blocking-render",
@@ -3688,8 +3698,10 @@
     "keyboard-events",
     "languagedetector",
     "languagemodel",
+    "lh",
     "light-dark",
     "light-dark-image",
+    "line-clamp",
     "linear-easing",
     "link-rel-expect",
     "link-rel-preload",
@@ -3715,6 +3727,7 @@
     "overscroll-behavior",
     "page-visibility",
     "page-visibility-state",
+    "paint-order",
     "password-credentials",
     "permissions-policy",
     "placeholder",
@@ -3730,6 +3743,7 @@
     "reading-flow",
     "referrer-policy",
     "registered-custom-properties",
+    "relative-color",
     "resize",
     "resize-observer",
     "revert-rule",
@@ -3761,6 +3775,7 @@
     "subresource-integrity",
     "summarizer",
     "svg",
+    "svg-filters",
     "switch-control",
     "temporal",
     "text-box",
