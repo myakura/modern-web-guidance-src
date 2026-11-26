@@ -323,6 +323,19 @@ window.__featuresMapping = {
   "conditional-async-dependencies": [
     "top-level-await"
   ],
+  "custom-ml-model-inference": [
+    "webgpu",
+    "wasm",
+    "wasm-simd",
+    "float16array",
+    "js-modules-workers"
+  ],
+  "data-parallel-computation": [
+    "webgpu",
+    "js-modules-workers",
+    "wasm",
+    "wasm-simd"
+  ],
   "defer-rendering-heavy-content": [
     "content-visibility"
   ],
@@ -370,6 +383,14 @@ window.__featuresMapping = {
   ],
   "interactions-in-complex-layouts": [
     "content-visibility"
+  ],
+  "large-scene-rendering": [
+    "webgpu",
+    "webgl2",
+    "webgl-multi-draw",
+    "offscreen-canvas",
+    "canvas-2d",
+    "prefers-reduced-motion"
   ],
   "lazy-load-video-and-audio": [
     "loading-lazy-media",
@@ -601,6 +622,7 @@ window.__featuresMapping = {
   ],
   "anchor-positioning-tab-underline": [
     "anchor-positioning",
+    "anchor-positioning-animations",
     "prefers-reduced-motion"
   ],
   "animate-element-entry-exit": [
@@ -857,7 +879,9 @@ window.__featuresMapping = {
   "context-menu": [
     "popover",
     "anchor-positioning",
-    "menu"
+    "focusgroup",
+    "invoker-commands",
+    "toggleevent-source"
   ],
   "copy-button": [
     "invoker-commands",
@@ -903,6 +927,7 @@ window.__featuresMapping = {
   "menu": [
     "popover",
     "invoker-commands",
+    "toggleevent-source",
     "anchor-positioning",
     "focusgroup",
     "has",
